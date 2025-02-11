@@ -4,21 +4,31 @@ source "https://rubygems.org"
 gem "rails", "~> 8.0.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-# Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
+# Use SCSS for stylesheets
+gem 'sass-rails'
+# JS compressor instead of uglifier
+gem "terser", "~> 1.2"
+# Adding coffeescript support for .coffee assets and views or whatever
+gem 'coffee-rails'
+# I have no clue
+gem "mini_racer"
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
+# Build JSON APIs with ease. Read more [https://github.com/rails/jbuilder]
+gem 'jbuilder', '~> 2.7'
+# Use Redis adapter to run Action Cable in production
+gem 'redis'
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
-# Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem "jbuilder"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
@@ -49,11 +59,22 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '~> 2.0', '>= 2.0.2'
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  # Capistrano for deployment
+  gem "capistrano", "~> 3.10", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
+  # For any file changes idk
+  gem 'listen'
+  # Spring speeds up development by keeping your application running in the background. Read more: [https://github.com/rails/spring]
+  gem "spring"
+  gem 'spring-watcher-listen'
 end
 
 group :test do
@@ -61,3 +82,12 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+group :production do
+  # Use postgresql as the database for Active Record
+  gem "pg", "~> 1.1"
+end
+
+ruby '3.4.1'
+
+
