@@ -26,6 +26,10 @@ gem 'redis'
 gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+# Adding sprocets to try fixing a bug
+gem 'sprockets', '~> 4.0'
+# Help me
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem "bcrypt", "~> 3.1.7"
