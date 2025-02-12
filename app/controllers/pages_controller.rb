@@ -6,6 +6,9 @@ class PagesController < ApplicationController
     @pages = Page.all
   end
 
+  def about
+  end
+
   # GET /pages/1 or /pages/1.json
   def show
   end
