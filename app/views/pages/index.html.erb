@@ -1,16 +1,4 @@
-<p style="color: green"><%= notice %></p>
-
-<% content_for :title, "Pages" %>
-
-<h1>Pages</h1>
-
-<div id="pages">
-  <% @pages.each do |page| %>
-    <%= render page %>
-    <p>
-      <%= link_to "Show this page", page %>
-    </p>
-  <% end %>
+<div class="home-callout text-center container-fluid">
+  <h1>Welcome to DevMatch</h1>
+  <h3>A membership site where entrepreneurs can meet developers.</h3>
 </div>
-
-<%= link_to "New page", new_page_path %>
