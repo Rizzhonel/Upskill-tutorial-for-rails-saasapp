@@ -441,6 +441,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  autoprefixer-rails
   bcrypt (~> 3.1.7)
   bootsnap
   bootstrap (~> 5.3.3)

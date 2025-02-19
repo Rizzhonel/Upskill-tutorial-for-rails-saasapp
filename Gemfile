@@ -34,6 +34,8 @@ gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'bootstrap', '~> 5.3.3'
 # Font awesome for icons
 gem "font-awesome-rails"
+# Adding more stuff
+gem "autoprefixer-rails"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem "bcrypt", "~> 3.1.7"
 
