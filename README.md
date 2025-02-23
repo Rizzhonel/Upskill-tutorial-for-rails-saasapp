@@ -10,18 +10,18 @@ link: https://upskillcourses.com
 
 * Ruby version 3.4.1
 
-* System dependencies idk
+* System dependencies, idk
 
-* Configuration idk
+* Configuration, idk
 
-* Database creation postgresql but idk much
+* Database creation postgresql, but idk much
 
-* Database initialization just rake db:create idk
+* Database initialization, just rake db:create ,idk
 
-* How to run the test suite no test
+* How to run the test suite, no test
 
-* Services (job queues, cache servers, search engines, etc.) idk
+* Services (job queues, cache servers, search engines, etc.), idk
 
-* Deployment instructions just run
+* Deployment instructions, just run
 
 * ... ...
