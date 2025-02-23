@@ -36,6 +36,8 @@ gem 'bootstrap', '~> 5.3.3'
 gem "font-awesome-rails"
 # Adding more stuff
 gem "autoprefixer-rails"
+# Added hirb for better view of db in console
+gem 'hirb', '~> 0.7.3'
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem "bcrypt", "~> 3.1.7"
 
