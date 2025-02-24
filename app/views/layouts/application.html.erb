@@ -55,8 +55,15 @@
     </div>
   </div>
 </nav>
-    
-    <%= yield %>
+<div class="container">
+  <% if !flash.empty?() %>
+    <%= flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <% break %>
+    <% end %>
+  <% end %>
+</div>
+  <%= yield %>
    
   </body>
 </html>
